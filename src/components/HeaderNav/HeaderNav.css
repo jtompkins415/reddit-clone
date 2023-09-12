@@ -1,0 +1,33 @@
+.navbar-container {
+    display: inline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title-container {
+    display: inline-flex;
+    justify-self: start;
+    margin-left: 2rem;
+}
+
+.nav-container {
+    display: inline-flex;
+    margin-right: 2rem;
+}
+
+.navitem {
+    margin: 1rem;
+    list-style: none;
+}
+
