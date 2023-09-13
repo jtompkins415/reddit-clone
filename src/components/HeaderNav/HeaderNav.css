@@ -32,6 +32,7 @@
 
 .navbar-title:hover {
     color:#84190B;
+    cursor: pointer;
 }
  
 .nav-container {

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Nav, Navbar, NavbarBrand, NavItem, NavLink} from "reactstrap";
 import './HeaderNav.css';
 
