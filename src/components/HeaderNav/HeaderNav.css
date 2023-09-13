@@ -5,8 +5,8 @@
     left: 0;
     width: 100%;
     z-index: 100;
-
-
+    border-bottom: 1px solid #131615;
+    background-color: #F7FFF7;
 }
 
 .navbar-content {
@@ -21,6 +21,19 @@
     margin-left: 2rem;
 }
 
+.navbar-title {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: .4rem;
+    color:#131615;
+    transition: color .4s ease-in;
+}
+
+.navbar-title:hover {
+    color:#84190B;
+}
+ 
 .nav-container {
     display: inline-flex;
     margin-right: 2rem;
@@ -31,3 +44,27 @@
     list-style: none;
 }
 
+.navlink {
+    font-family: 'Kodchasan', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.user-auth {
+    color:#131615;
+    transition: color .4s ease-in;
+}
+
+.user-auth:hover {
+    color: #84190B;
+}
+
+.about-link {
+    color:#131615;
+    transition: color .4s ease-in;
+}
+
+.about-link:hover {
+    color: #f6AA1C;
+}
