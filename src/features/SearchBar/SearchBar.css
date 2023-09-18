@@ -1,0 +1,32 @@
+.form-container {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.input-container {
+    align-self: center;
+    margin-right: 2rem;
+}
+
+.input-container Input{
+    border-radius: 1rem;
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+
+.button-container Button{
+   color: #F6AA1C;
+   transition-property: background-color, color;
+   transition-duration: 1s; 
+   transition-timing-function: ease-in;
+}
+
+.button-container Button:hover {
+    background-color: #F6AA1C;
+    color: #f7fff7;
+    border: none;
+    
+}
