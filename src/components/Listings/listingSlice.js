@@ -23,14 +23,27 @@ export const fetchListings = createAsyncThunk(
             const {children} = response.data.data;
             console.log(children);
             const listingData = children.reduce((acc, listing) => {
+                const previewData = listing.data.preview;
+                const previewImage = previewData?.images?.[0]?.source?.url || '';
                 acc[listing.data.id] = {
                     id: listing.data.id,
                     title: listing.data.title,
                     text: listing.data.selftext,
+                    author: listing.data.author,
                     ups: listing.data.ups,
                     downs: listing.data.downs,
                     subreddit: listing.data.subreddit,
-                    url: listing.data.url
+                    url: listing.data.url,
+                    preview: {
+                        enabled: !!previewImage,
+                        images: [
+                            {
+                                source: {
+                                    url: previewImage
+                                }
+                            }
+                        ]
+                    }
                 };
                 return acc
             }, {});
@@ -53,6 +66,7 @@ const listingsSlice = createSlice({
                 id: action.payload.id,
                 title: action.payload.title,
                 text: action.payload.text,
+                author: action.payload.author,
                 ups: action.payload.ups,
                 downs: action.payload.downs,
                 subreddit: action.payload.subreddit,
